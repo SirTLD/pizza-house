@@ -4,6 +4,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import { GlobalStyle } from './globalStyles';
 import Hero from './components/Hero';
 import Products from './components/Products';
+import { ProductData } from './components/Products/data';
 
 function App() {
   return (
@@ -11,7 +12,7 @@ function App() {
       <GlobalStyle />
 
       <Hero />
-      <Products heading="Choose your best" />
+      <Products heading="Choose your next meal" data={ProductData} />
     </Router>
   );
 }

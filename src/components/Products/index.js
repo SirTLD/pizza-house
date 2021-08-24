@@ -1,7 +1,7 @@
 import React from 'react';
 import {
   ProductsContainer,
-  ProductsHeading,
+  ProductHeading,
   ProductWrapper,
   ProductCard,
   ProductImg,
@@ -15,17 +15,17 @@ import {
 function Products(heading, data) {
   return (
     <ProductsContainer>
-      <ProductsHeading>{heading}</ProductsHeading>
+      <ProductHeading>{heading}</ProductHeading>
       <ProductWrapper>
-        {data.map((item, index) => {
+        {data.map((product, index) => {
           return (
             <ProductCard key={index}>
-              <ProductImg src={item.img} alt={item.alt} />
+              <ProductImg src={product.img} alt={product.alt} />
               <ProductInfo>
-                <ProductTitle>{item.title}</ProductTitle>
-                <ProductDesc>{item.desc}</ProductDesc>
-                <ProductPrice>{item.price}</ProductPrice>
-                <ProductButton>{item.button}</ProductButton>
+                <ProductTitle>{product.title}</ProductTitle>
+                <ProductDesc>{product.desc}</ProductDesc>
+                <ProductPrice>{product.price}</ProductPrice>
+                <ProductButton>{product.button}</ProductButton>
               </ProductInfo>
             </ProductCard>
           );
