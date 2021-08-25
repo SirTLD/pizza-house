@@ -7,7 +7,7 @@ function Navbar({ toggle }) {
       <Nav>
         <NavLink to="/">Pizza House</NavLink>
         <NavIcon onClick={toggle}>
-          <p>Menu</p>
+          {/* <p>Menu</p> */}
           <Bars />
         </NavIcon>
       </Nav>
