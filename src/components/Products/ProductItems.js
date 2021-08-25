@@ -32,6 +32,7 @@ export const ProductHeading = styled.h1`
   font-size: clamp(2rem, 2.5vw, 3rem);
   text-align: center;
   margin-bottom: 5rem;
+  padding-top: 3rem;
 `;
 
 export const ProductTitle = styled.h2`

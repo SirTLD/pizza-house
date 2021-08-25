@@ -12,7 +12,9 @@ import {
   ProductButton,
 } from './ProductItems';
 
-function Products(heading, data) {
+// import { data } from '../Products/data';
+
+function Products({ heading, data }) {
   return (
     <ProductsContainer>
       <ProductHeading>{heading}</ProductHeading>
