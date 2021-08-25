@@ -41,7 +41,12 @@ export const NavIcon = styled.div`
 
 export const Bars = styled(FaPizzaSlice)`
   font-size: 2.5rem;
-  ${'' /* transfrom: translate(-50%, -15%); */}
-  padding-right: 0.5rem;
+  transfrom: translate(-50%, -15%);
+  ${'' /* padding-right: 0.5rem; */}
   margin-top: 15px;
+  margin-right: 4rem;
+
+  @media screen and (max-width: 400px) {
+    margin-right: 1rem;
+  }
 `;
